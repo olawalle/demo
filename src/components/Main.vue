@@ -444,7 +444,7 @@ export default {
     },
     async getUsers () {
       // fetch data from the github api
-      let users = await axios.get('https://api.github.com/search/users?q=location:france')
+      let users = await axios.get('https://api.github.com/search/users?q=location:nigeria')
       // needed to add some missing fields to the data returned
       let users_ = users.data.items.map((user, i) => {
         return {
