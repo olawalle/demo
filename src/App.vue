@@ -114,6 +114,7 @@ body {
       display: inline;
       position: relative;
       top: 5px;  
+      left: 50px;
       .link {
         color: #bdbdbd;
         display: inline-block;

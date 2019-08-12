@@ -1,4 +1,5 @@
 <template>
+    <div class="main">
     <div class="sidebar">
         <p class="heading">
             <img src="../assets/logo_.png" alt=""> All Employees
@@ -30,6 +31,10 @@
                 <span>{{link}}</span>
             </li>
         </ul>
+    </div>
+    <div class="addProject">
+        add project
+    </div>
     </div>
 </template>
 <script>
@@ -63,12 +68,25 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+    .main {
+        position: sticky;
+        top: 20px;
+        .addProject {
+            position: relative;
+            top: -30px;
+            background-color: #8454df;
+            color: #fff;
+            border-radius: 50px;
+            padding: 15px;
+            width: 64%;
+            margin: 0 13% 50px 13%;
+            text-align: center
+        }
+    }
     .sidebar {
         background-color: #ffffff;
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(149, 158, 165, 0.1);
-        position: sticky;
-        top: 20px;
         min-height: 60vh;
         padding: 30px;
         .heading {
